@@ -1,0 +1,586 @@
+/* =====================[PAGE SETTINGS]========================== */
+
+body{
+    margin: 0 0 -10px 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+::selection {
+    background: #ff0000; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+#telegram-link{
+    color: #0f7bd4;
+}
+
+.transition img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.lasttransition img{
+    width: 100%;
+    margin: 0 0 -10px 0;
+    padding: 0;
+}
+
+.transitionStart img{
+    width: 100%;
+    margin: 0 0 -10px 0;
+    padding: 0;
+}
+
+@media (width < 1539px)
+{
+    .transition img{
+        display: none;
+    }
+    .lasttransition img{
+        display: none;
+    }
+    .transitionStart{
+        display: none;
+    } 
+    #videoimg{
+        display: none;
+    }
+}
+
+section{
+    margin: 0 0 -1px 0;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+/* =========================[HEADER]========================== */
+
+@media (width < 1359px){
+    .header-texts ul{
+        margin-right: 12px;
+    }
+    .nav-list a {
+        color: #fff;
+        text-decoration: none;
+        padding-left: 20px; 
+        font-size: 20px;
+    }
+}
+
+@media (width > 1340px){
+    .header-texts ul{
+        margin-right: 20px;
+    }
+    .nav-list a {
+        color: #fff;
+        text-decoration: none;
+        padding-left: 25px; 
+        font-size: 25px;
+    }
+}
+
+@media (width < 1299px){
+    .header-texts ul{
+        display: none;
+    }
+    .nav-list a {
+        color: #fff;
+        text-decoration: none;
+        padding-left: 25px; 
+        font-size: 25px;
+    }
+}
+
+header{
+    background-color: rgb(0, 0, 0, 1);
+    margin-top: 0;
+    box-shadow: 0 3px 8px rgba(255, 0, 0, 0.6);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-texts {
+    color: #fff;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: calc(100% - 90px); 
+}
+
+.header-texts h1{
+    margin: 0;
+}
+
+.nav-list {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0; 
+    display: flex; 
+    margin-left: 20px;
+}
+
+@media (width > 1001px){
+    header img{
+        width: 70px;
+        height: 70px;
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+}
+
+
+@media (width < 1001px){
+    header img{
+        width: 150px;
+        height: 150px;
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+}
+
+/* =========================[MAIN SECTION]========================== */
+
+@media (width > 1539px){
+    .main-section{
+        background: url("images/backgrounds/MainBack.jpg");
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: 100%;
+    }
+}
+@media (width < 1538px){
+    .main-section{
+        background: url("images/backgrounds/MainBack.jpg");
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: 100%;
+    }
+}
+@media (width < 1315px){
+    .main-section{
+        background: url("images/backgrounds/MainBack.jpg");
+        height: 100vh;
+        background-position: 40%;
+        background-size: auto;
+    }
+}
+
+@media (width > 1001px){
+    #main-block h1{
+        font-size: 3em;
+    }
+    
+    #main-block h2{
+        color: #d6d6d6;
+        font-size: 2em;
+        margin-top: -40px;
+    }
+}
+
+@media (width < 1001px){
+    #main-block h1{
+        font-size: 5em;
+    }
+    
+    #main-block h2{
+        color: #d6d6d6;
+        font-size: 3em;
+        margin-top: -40px;
+    }
+}
+
+
+#main-block {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+} 
+
+
+.main-button{
+    border: 0;
+    padding: 18px 56px;
+    border-radius: 6px;
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+.main-button:hover{
+    text-decoration: underline;
+}
+
+/* =========================[INFO SECTION]========================== */
+
+@media (width > 1515px){
+    .info-block img{
+        width: 35%;
+        margin-left: 12%;
+        transition: 0.8s;
+    }
+    .info-section h2{
+        padding: 1px;
+        font-size: 1.4em;
+        width: 40%;
+        margin-left: 30px;
+    }
+}
+
+@media (width < 1514px){
+    .info-block img{
+        display: none;
+    }
+    .info-section h2{
+        padding: 1px;
+        width: 80%;
+        margin-left: 30px;
+    }
+}
+
+@media (width > 1001px){
+    .info-section h1{
+        padding-top: 100px;
+        margin: 30px;
+        color: #ff0000;
+        margin-bottom: 0;
+        font-size: 2.4em;
+    }
+    .info-section{
+        height: 100vh;
+        background-size: 100%;
+    }
+}
+@media (width < 1001px){
+    .info-section h1{
+        padding-top: 100px;
+        margin: 30px;
+        color: #ff0000;
+        margin-bottom: 0;
+        font-size: 3em;
+    }
+    .info-section h2{
+        padding: 1px;
+        font-size: 2.2em;
+        margin-left: 30px;
+    }
+    .info-section{
+        background-size: 100%;
+    }
+}
+
+.info-block{
+    display: inline-flex;
+}
+
+.info-block img:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* =========================[VIDEO SECTION]========================== */
+
+.crypto-section{
+    margin-top: -12px;
+    height: 100vh;
+    width: 100%;
+	background: url(images/backgrounds/Crypto.png) no-repeat center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	box-shadow: 1px 1px 1px 2px solid red;
+}
+
+.crypto-section button {
+    width: 14vw;
+    height: 8vh;
+    border-radius: 1vw;
+    background-color: #ff0000;
+    border: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.crypto-section h3 {
+    position: absolute;
+    font-size: 1.6vw; 
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-align: center;
+    margin: 0;
+}
+
+.crypto-section h3:hover{
+    text-decoration: underline;
+}
+
+.crypto-section button a{
+    color: #fff;
+}
+
+.crypto-section button a:hover{
+    text-decoration: underline;
+}
+
+#btn{
+	width: 42%;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+
+/* =========================[PROJECTS SECTION]========================== */
+
+.projects-section{
+    background-size: 100%;
+    padding-bottom: 20px;
+}
+
+.title{
+    text-align: center;
+}
+
+.projectCategory{
+    margin: 0 0 0 20px;
+    color: #ff0000;
+    font-size: 1.6em;
+}
+
+.title h2{
+    padding-top: 100px;
+    margin: 20px;
+    color: #ff0000;
+    font-size: 2.4em;
+}
+
+.projectCategory{
+    text-align: left;
+}
+
+.projectCategory h3{
+    font-size: 34px;
+}
+
+.projects-container{
+    width: 90%;
+    height: 90%;
+    padding: 50px;
+    display: flex;
+    justify-content: left;
+}
+
+.projects-zone{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project{
+    width: 260px;
+    height: 440px;
+    /* border: 1px solid red; */
+    transition: 0.8s;
+    margin-top: -30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.project h3{
+    padding-bottom: 10px;
+}
+
+.project h4{
+    position: absolute;
+    color: #fff;
+    margin-top: -32px;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: scale(1.05); 
+}
+
+/* =========================[ACTIVITIES SECTION]========================== */
+
+@media (width > 1515px){
+    .activities-section{
+        background: url("images/backgrounds/ActivitiesBack.png");
+        min-height: 100vh;
+        background-size: 100%;
+        text-align: center;
+        margin-top: -40px;
+    }
+}
+
+@media (width < 1514px){
+    .activities-section{
+        display: none;
+    }
+}
+
+
+
+.activities-section h2{
+    padding-top: 100px;
+    margin-top: 30px;
+    color: #ff0000;
+    font-size: 2.4em;
+}
+
+.activities-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.activities-list{
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+}
+
+.activity{
+    margin: 0 55px 55px 0;
+}
+
+.activity img{
+    width: 400px;
+    height: 400px;
+}
+
+/* =========================[MEMBERS SECTION]========================== */
+
+.membersSection{
+    background-size: 100%;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.membersSection h2{
+    padding-top: 100px;
+    margin-top: 0px;
+    color: #ff0000;
+    font-size: 2.4em;
+}
+
+#memberProgramers{
+    color: #ff0000;
+    font-size: 1.6em;
+    margin-top: -30px;
+    position: relative;
+}
+
+#memberArtists{
+    margin-top: 5px;
+    color: #ff0000;
+    font-size: 1.6em;
+    position: relative;
+}
+
+.memberCardZone{
+    width: 95%;
+    background-color: #101010;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.memberCard{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 15px;
+}
+
+.memberCard img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.memberCardText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+    text-align: left;
+    h1{
+        color: #ff0000;
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+    h2{
+        color: #8b0000;
+        font-size: 20px;
+        margin-top: -10px;
+        padding: 0;
+    }
+    h3{
+        color:rgb(30, 138, 245);
+        margin-top: -10px;
+        margin-bottom: -6px;
+    }
+}
+
+.youtubeButton{
+    background-color: #ff0000;
+    border: 0;
+    border-radius: 10px;
+    padding: 18px 36px;
+    color: #fff;
+    font-size: 15px;
+    margin: 40px 0 0 0;
+    cursor: pointer;
+}
+
+.portfolio-button{
+    background-color: #ff0000;
+    border: 0;
+    border-radius: 10px;
+    padding: 18px 36px;
+    color: #fff;
+    font-size: 15px;
+    margin: 40px 10px 0 0;
+    cursor: pointer;
+}
+
+.youtubeButton:hover{
+    background-color: #c40000;
+    text-decoration: underline;
+}
+
+.portfolio-button:hover{
+    background-color: #c40000;
+    text-decoration: underline;
+}
+
+.transitionStart{
+    margin-top: -10px;;
+}

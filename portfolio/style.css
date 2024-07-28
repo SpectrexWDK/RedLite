@@ -1,0 +1,233 @@
+/* =========================[MAIN]========================== */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+::selection {
+    background: #ff0000; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+/* =========================[HEADER]========================== */
+
+header{
+    background-color: rgb(0, 0, 0, 1);
+    margin-top: 0;
+    box-shadow: 0 3px 8px rgba(255, 0, 0, 0.6);
+    display: flex;
+    width: 100%;
+    z-index: 100;
+}
+
+.header-texts {
+    color: #fff;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    width: calc(100% - 90px); 
+}
+
+.header-texts h1{
+    margin: 0;
+}
+
+.nav-list {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0; 
+    display: flex; 
+    margin-left: 20px;
+}
+
+header img{
+    width: 80px;
+    height: 80px;
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+/* =========================[SECTION]========================== */
+
+.zone{
+    margin-top: 6vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-block{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.card{
+    text-align: center;
+}
+
+.card h1{
+    color: #ff0000;
+    font-size: 2.6em;
+}
+
+.info-section h2{
+    color: aqua;
+    font-size: 2em;
+}
+
+.card img{
+    width: 300px;
+    border-radius: 30px;
+    transition: 0.5s;
+    box-shadow: 0 0 12px 4px #ff0000;
+}
+
+.card img:hover{
+    width: 300px;
+    border-radius: 30px;
+    transform: scale(1.1);
+    box-shadow: 0 0 24px 6px #ff0000;
+}
+
+.info-section{
+    margin-left: 30px;
+}
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.languages h3{
+    margin-left: 15px;
+    font-size: 1.4em;
+}
+
+.language img{
+    width: 40px;
+}
+
+.language{
+    display: inline-flex;
+    align-items: center;
+
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.activities-container{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activities{
+    display: inline-flex;
+    h3{
+        font-size: 1.4em;
+        color: #ffffff;;
+        margin: 10px 0 10px 0;
+    }
+}
+
+.ytbtn{
+    background-color: #ff0000;
+    border: 0;
+    width: 160px;
+    color: #fff;
+    padding: 16px 22px 16px 22px;
+    margin: 15px 0 30px 20px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ytbtn:hover{
+    background-color: #c40000;
+    text-decoration: underline;
+}
+
+.category{
+    text-align: center;
+    width: 100%;
+    color: #ff0000;
+    font-size: 1.6em;
+}
+
+/* =========================[POEMS]========================== */
+
+.poems-section{
+    display: flex;
+    justify-content: center;
+}
+
+.poems-zone{
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 2px#121212;
+}
+
+@media(max-width: 1359px){
+    .poem{
+        margin: 0 5px 0 5px;
+    }
+    .poem h2 h3{
+        font-size: 12px;
+    }
+}
+
+.poem{
+    h2, h3{
+        text-align: center;
+    }
+    h3{
+        color: rgb(209, 209, 209);
+    }
+    h4{
+        text-align: right;
+    }
+}
+
+@media(min-width: 1360px){
+    .poem{
+        margin: 0 55px 0 55px;
+    }
+}
+
+
+.allPoems{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
