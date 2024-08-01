@@ -9,7 +9,7 @@ body{
 }
 
 ::selection {
-    background: #ff0000; /* Цвет фона */
+    background: #ff003d; /* Цвет фона */
     color: #fff; /* Цвет текста */
 }
 
@@ -104,6 +104,8 @@ header{
     position: fixed;
     width: 100%;
     z-index: 100;
+    height: 8vh;
+    align-items: center;
 }
 
 .header-texts {
@@ -128,8 +130,8 @@ header{
 
 @media (width > 1001px){
     header img{
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         margin-left: 12px;
         margin-right: 10px;
     }
@@ -212,7 +214,7 @@ header{
     border: 0;
     padding: 18px 56px;
     border-radius: 6px;
-    background-color: #ff0000;
+    background-color: #ff003d;
     color: #fff;
     font-size: 24px;
     cursor: pointer;
@@ -225,7 +227,7 @@ header{
 
 @media (width > 1515px){
     .info-block img{
-        width: 35%;
+        width: 32%;
         margin-left: 12%;
         transition: 0.8s;
     }
@@ -252,7 +254,7 @@ header{
     .info-section h1{
         padding-top: 100px;
         margin: 30px;
-        color: #ff0000;
+        color: #ff003d;
         margin-bottom: 0;
         font-size: 2.4em;
     }
@@ -264,15 +266,15 @@ header{
 @media (width < 1001px){
     .info-section h1{
         padding-top: 100px;
-        margin: 30px;
-        color: #ff0000;
+        margin: 20vh;
+        color: #ff003d;
         margin-bottom: 0;
         font-size: 3em;
     }
     .info-section h2{
         padding: 1px;
         font-size: 2.2em;
-        margin-left: 30px;
+        margin-left: 20vh;
     }
     .info-section{
         background-size: 100%;
@@ -306,7 +308,7 @@ header{
     width: 14vw;
     height: 8vh;
     border-radius: 1vw;
-    background-color: #ff0000;
+    background-color: #ff003d;
     border: none;
     color: #fff;
     display: flex;
@@ -358,14 +360,14 @@ header{
 
 .projectCategory{
     margin: 0 0 0 20px;
-    color: #ff0000;
+    color: #ff003d;
     font-size: 1.6em;
 }
 
 .title h2{
     padding-top: 100px;
     margin: 20px;
-    color: #ff0000;
+    color: #ff003d;
     font-size: 2.4em;
 }
 
@@ -444,7 +446,7 @@ header{
 .activities-section h2{
     padding-top: 100px;
     margin-top: 30px;
-    color: #ff0000;
+    color: #ff003d;
     font-size: 2.4em;
 }
 
@@ -487,12 +489,12 @@ header{
 .membersSection h2{
     padding-top: 100px;
     margin-top: 0px;
-    color: #ff0000;
+    color: #ff003d;
     font-size: 2.4em;
 }
 
 #memberProgramers{
-    color: #ff0000;
+    color: #ff003d;
     font-size: 1.6em;
     margin-top: -30px;
     position: relative;
@@ -500,7 +502,7 @@ header{
 
 #memberArtists{
     margin-top: 5px;
-    color: #ff0000;
+    color: #ff003d;
     font-size: 1.6em;
     position: relative;
 }
@@ -532,7 +534,7 @@ header{
     margin-left: 20px;
     text-align: left;
     h1{
-        color: #ff0000;
+        color: #ff003d;
         margin-top: -10px;
         margin-bottom: 15px;
     }
@@ -550,7 +552,7 @@ header{
 }
 
 .youtubeButton{
-    background-color: #ff0000;
+    background-color: #ff003d;
     border: 0;
     border-radius: 10px;
     padding: 18px 36px;
@@ -561,7 +563,7 @@ header{
 }
 
 .portfolio-button{
-    background-color: #ff0000;
+    background-color: #ff003d;
     border: 0;
     border-radius: 10px;
     padding: 18px 36px;
