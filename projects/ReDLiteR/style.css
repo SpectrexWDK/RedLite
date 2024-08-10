@@ -1,0 +1,180 @@
+body{
+	background-color: #292930;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 0px; 
+    background: transparent; 
+}
+
+body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+::selection{
+	background-color: #ff003d;
+	color: #fff;
+}
+
+header{
+	height: 9vh;
+	width: 100%;
+	position: fixed;
+	background-color: #1f1f25;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 0 0;
+}
+
+.header_list{
+	display: inline-flex;
+	width: 60%;
+	height: 70%;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+.header_list_main{
+	display: flex;
+	width: 100%;
+	height: 80%;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+
+.header_list img{
+	display: inline-flex;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#logo{
+	height: 100%;
+	transform: scale(1.5);
+}
+
+#category{
+	transition: 0.2s;
+}
+
+#category:hover{
+	transform: scale(1.2);
+}
+
+/* =========================================== */
+
+.all_lists{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.commands_list{
+	margin-top: 10vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.command_panels{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+}
+
+.command_panel{
+	margin: 0.6vh;
+	padding: 1.8vh;
+	background-color: #1f1f25;
+	width: 100%;
+	border-radius: 1vh;
+}
+
+.command_panel h2{
+	font-size: 2.2vh;
+	color: #fff;
+	margin: 0.5vh;
+}
+
+.command_panel h3{
+	font-size: 2vh;
+	color: #999;
+	margin: 0.5vh;
+}
+
+#args{
+	color: #777777;
+}
+
+#req{
+	color: #c72828;
+}
+
+#category_name{
+	text-align: center;
+	color: #fff;
+	font-size: 3vh;
+}
+
+hr{
+	display: flex;
+	border: 2px solid #434350;
+	width: 103%;
+	border-radius: 2vh;
+}
+
+.settings_panel{
+	justify-content: center;
+	display: inline-flex;
+}
+
+.input_any{
+	background-color: #1f1f25;
+	margin: 1vh 2vh 0vh 2vh;
+	width: 36%;
+	border-radius: 1vh;
+}
+
+.input_any h2{
+	color: #fff;
+	margin-left: 2vh;
+	font-size: 2.6vh;
+}
+
+.input_any input{
+	background-color: #141416;
+	padding: 1vh;
+	border: 0;
+	color: #fff;
+	margin-left: 2vh;
+	font-size: 2.6vh;
+	border-radius: 0.5vh;
+}
+
+.input_any button{
+	color: #fff;
+	background-color: #ff003d;
+	border: 0;
+	border-radius: 0 1vh;
+	padding: 1vh;
+	margin-left: 1vh;
+	font-size: 2.4vh;
+}
+
+
+
+
+
+
+

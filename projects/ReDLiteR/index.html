@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ReDLiteR</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+	<header>
+		<ul class="header_list">
+			<img src='../images/icons/rules.png' id="category" onclick="OpenCommandsList(1)">
+			<img src='../images/icons/settings.png' id="category" onclick="OpenCommandsList(2)">
+			<img src='../images/icons/main.png' id="category" onclick="OpenCommandsList(3)">
+			<img src='../images/icons/mod.png' id="category" onclick="OpenCommandsList(4)">
+			<img src="../images/logo.png" id='logo' onclick="OpenCommandsList(9)">
+			<img src='../images/icons/roles.png' id="category" onclick="OpenCommandsList(5)">
+			<img src='../images/icons/autoroles.png' id="category" onclick="OpenCommandsList(6)">
+			<img src='../images/icons/automod.png' id="category" onclick="OpenCommandsList(7)">
+			<img src='../images/icons/protection.png' id="category" onclick="OpenCommandsList(8)">
+		</ul>
+	</header>
+
+    <section class="all_lists">
+
+        <section class="commands_list" id="commands_list_1" style="display: none;">
+            <div class="command_panels">
+                <h2 id="category_name">Помощь</h2>
+                <hr>
+                <div class="command_panel">
+                    <h2>/help all</h2>
+                    <h3>Показывает все доступные команды.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/help main</h2>
+                    <h3>Показывает основные команды.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/help moderation</h2>
+                    <h3>Показывает команды модерации.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/help moderation</h2>
+                    <h3>Показывает ролевые команды.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/help moderation</h2>
+                    <h3>Показывает команды для настроек.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/help join_members</h2>
+                    <h3>Показывает помощь для настройки приветствий.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="commands_list" id="commands_list_2" style="display: none;">
+            <div class="command_panels">
+                <h2 id="category_name">Настройки</h2>
+                <hr>
+                <div class="command_panel">
+                    <h2>/set color <span id="args">[#hex]</span></h2>
+                    <h3>Задаёт цвет сообщений.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/set emoji <span id="args">[emoji]</span></h2>
+                    <h3>Задаёт эмодзи.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/set max_warns <span id="args">[count]<span id="req">*</span></span></h2>
+                    <h3>Задаёт максимальное количество предупреждений для бана.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/stats_setup <span id="args">[everyone_name]<span id="req">*</span> [piples_name]<span id="req">*</span> [bots_name]<span id="req">*</span></span></h2>
+                    <h3>Создаёт каналы для отслеживания статистики.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/set join_channel <span id="args">[#channel]<span id="req">*</span></span></h2>
+                    <h3>Задаёт канал для приветствий.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/set join_message <span id="args">[message]<span id="req">*</span></span></h2>
+                    <h3>Задаёт приветственное сообщение.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/set join_image <span id="args">[image_url]<span id="req">*</span></span></h2>
+                    <h3>Задаёт аватар при входе участников без аватарки.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="commands_list" id="commands_list_3" style="display: none;">
+            <div class="command_panels">
+                <h2 id="category_name">Основные</h2>
+                <hr>
+                <div class="command_panel">
+                    <h2>/stats show</h2>
+                    <h3>Показывает стаистику сервера.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/stats update</h2>
+                    <h3>Обновляет каналы статистики.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/server</h2>
+                    <h3>Показывает настройки бота на сервере.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/info <span id="args">[member]</span></h2>
+                    <h3>Показывает информацию об учатснике.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/avatar <span id="args">[member]</span></h2>
+                    <h3>Отправляет аватар пользователя.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/emoji <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Отправляет аватар пользователя.</h3>
+                </div>
+
+                <div class="command_panel">
+                    <h2>/rand <span id="args">[min] [max]</span></h2>
+                    <h3>Отправляет случайное число.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/ball <span id="args">[question]<span id="req">*</span></span></h2>
+                    <h3>Спрашивает у шара.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/math <span id="args">[excpression]<span id="req">*</span></span></h2>
+                    <h3>Решает математическое выражение.</h3>
+                </div>
+
+                <div class="command_panel">
+                    <h2>/like <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Лайкает пользователя.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/dislike <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Дизлайкает пользователя.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/reputation <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Показывает репутацию пользователя.</h3>
+                </div>
+
+                <div class="command_panel">
+                    <h2>/giveaway create <span id="args">[title]<span id="req">*</span>
+                        [description]<span id="req">*</span>
+                        [winners]<span id="req">*</span>
+                        [reward]<span id="req">*</span>
+                    <h3>Создаёт розыгрыш.</h3>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="commands_list" id="commands_list_4" style="display: none;">
+            <div class="command_panels">
+                <h2 id="category_name">Модерация</h2>
+                <hr>
+                <div class="command_panel">
+                    <h2>/clear <span id="args">[count]<span id="req">* </span></span></h2>
+                    <h3>Чистит последние сообщения.</h3>
+                </div>
+
+                <div class="command_panel">
+                    <h2>/nickname set <span id="args">[member]<span id="req">* </span>[member]<span id="req">*</span></span></h2>
+                    <h3>Устанавливает никнейм.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/nickname add <span id="args">[member]<span id="req">* </span>[member]<span id="req">*</span></span></h2>
+                    <h3>Добавляет символы к никнейму.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/nickname show <span id="args">[member]<span id="req">* </span></span></h2>
+                    <h3>Показывает полный никнейм на сервере.</h3>
+                </div>
+
+                <div class="command_panel">
+                    <h2>/mute <span id="args">[member]<span id="req">*</span>[duration]</span></h2>
+                    <h3>Мьютит участника.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/unmute <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Размьючивает участника.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/mutes list</h2>
+                    <h3>Показывает список мьютов.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/mutes clear</h2>
+                    <h3>Чистит список мьютов.</h3>
+                </div>
+
+                <div class="command_panel">
+                    <h2>/timeout <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Выдаёт таймаут.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/untimeout <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Снимает таймаут.</h3>
+                </div>
+
+                <div class="command_panel">
+                    <h2>/warn <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Выдаёт предупреждение.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/unwarn <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Снимает предупреждение.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/warns show <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Показывает предупреждения.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/warns list</h2>
+                    <h3>Показывает список предупреждений.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/warns clear</h2>
+                    <h3>Очистка предупреждений.</h3>
+                </div>
+
+                <div class="command_panel">
+                    <h2>/kick <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Кикает участника.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/ban <span id="args">[member]<span id="req">*</span></span></h2>
+                    <h3>Банит участника.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/unban <span id="args">[member]<span id="req">* </span></span></h2>
+                    <h3>Разбанивает участника.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/bans list</h2>
+                    <h3>Показывает список банов сервера.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/bans clear</h2>
+                    <h3>Чистит список банов сервера.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="commands_list" id="commands_list_5" style="display: none;">
+            <div class="command_panels">
+                <h2 id="category_name">Роли</h2>
+                <hr>
+                <div class="command_panel">
+                    <h2>/roles list</h2>
+                    <h3>Показывает список ролей сервера.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/roles add <span id="args">[member]<span id="req">*</span>[role]<span id="req">*</span></span></h2>
+                    <h3>Добавляет роль пользователю.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/roles remove <span id="args">[member]<span id="req">*</span>[role]<span id="req">*</span></span></h2>
+                    <h3>Забирает роль у пользователя.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/roles mass_add <span id="args">[role]<span id="req">*</span></span></h2>
+                    <h3>Добавляет роль всем участникам сервера.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/roles mass_remove <span id="args">[role]<span id="req">*</span></span></h2>
+                    <h3>Забирает роль у всех участников сервера.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="commands_list" id="commands_list_6" style="display: none;">
+            <div class="command_panels">
+                <h2 id="category_name">Автороли</h2>
+                <hr>
+                <div class="command_panel">
+                    <h2>/autorole add <span id="args">[role]<span id="req">*</span></span></h2>
+                    <h3>Добавляет роль в список авторолей.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/autorole remove <span id="args">[role]<span id="req">*</span></span></h2>
+                    <h3>Убирает роль из списка авторолей.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/autorole list</h2>
+                    <h3>Показывает список авторолей.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/autorole clear</h2>
+                    <h3>Чистит список авторолей.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="commands_list" id="commands_list_7" style="display: none;">
+            <div class="command_panels">
+                <h2 id="category_name">Автомодерация</h2>
+                <hr>
+                <div class="command_panel">
+                    <h2>/automod words <span id="args">[True/False]<span id="req">*</span></span></h2>
+                    <h3>Включает автомодерацию плохих слов.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/automod links <span id="args">[True/False]<span id="req">*</span></span></h2>
+                    <h3>Включает автомодерацию ссылок.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/automod invites <span id="args">[True/False]<span id="req">*</span></span></h2>
+                    <h3>Включает автомодерацию приглашений.</h3>
+                </div>
+                
+                <div class="command_panel">
+                    <h2>/links_exceptions</h2>
+                    <h3>Показывает исключения (ссылки).</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/add_links_exception <span id="args">[link]<span id="req">*</span></span></h2>
+                    <h3>Добавляет ссылку в исключения.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/remove_links_exception <span id="args">[link]<span id="req">*</span></span></h2>
+                    <h3>Убирает ссылку из исключений.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/clear_links_exceptions</h2>
+                    <h3>Чистит список исключений (ссылки).</h3>
+                </div>
+
+                <div class="command_panel">
+                    <h2>/invites_exceptions</h2>
+                    <h3>Показывает исключения (приглашения).</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/add_invites_exception <span id="args">[invite_link]<span id="req">*</span></span></h2>
+                    <h3>Добавляет приглашение в исключения.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/remove_invites_exception <span id="args">[invite_link]<span id="req">*</span></span></h2>
+                    <h3>Убирает приглашение из исключений.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/clear_invites_exceptions</h2>
+                    <h3>Чистит список исключений (приглашения).</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="commands_list" id="commands_list_8" style="display: none;">
+            <div class="command_panels">
+                <h2 id="category_name">Защита</h2>
+                <hr>
+                <div class="command_panel">
+                    <h2>/antiraid <span id="args">[True/False]<span id="req">*</span></span></h2>
+                    <h3>Переключает защиту от спама.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/antispam <span id="args">[True/False]<span id="req">*</span></span></h2>
+                    <h3>Переключает защиту от спама.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/save </h2>
+                    <h3>Сохраняет бэкап сервера.</h3>
+                </div>
+                <div class="command_panel">
+                    <h2>/load</h2>
+                    <h3>Загружает сервер из бэкапа.</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="commands_list" id="commands_list_9">
+            <div class="command_panels">
+            <h2 id="category_name">Панель управления</h2>
+                <hr>
+                <div class="settings_panel">
+                    <div class="input_any">
+                        <h2>Цвет сообщений</h2>
+                        <input id="input_color" placeholder="цвет">
+                        <button onclick="api_set_color()">Сохранить</button><br><br>
+                    </div>
+        
+                    <div class="input_any">
+                        <h2>Эмодзи</h2>
+                        <input id="input_emoji" placeholder="эмодзи">
+                        <button onclick="api_set_emoji()">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="settings" id="commands_list_9">
+            <h2 id="category_name">Main</h2>
+            <hr>
+            
+            <div class="settings_panels">
+                <div class="input_any">
+                    <h2>Цвет сообщений</h2>
+                    <input id="input_color" placeholder="цвет">
+                    <button onclick="api_set_color()">Сохранить</button><br><br>
+                </div>
+    
+                <div class="input_any">
+                    <h2>Эмодзи</h2>
+                    <input id="input_emoji" placeholder="эмодзи">
+                    <button onclick="api_set_emoji()">Сохранить</button>
+                </div>
+            </div>
+        </section> -->
+    
+
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
