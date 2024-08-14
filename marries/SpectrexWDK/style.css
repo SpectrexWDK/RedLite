@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#timer {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#timer span {
+    margin: 0 5px;
+}
+
+.page{
+    width: 100vw;
+    height: 100vh;
+    background: url(images/back.png);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bright{
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.icons_container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+
+.icons{
+    margin-top: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#heart{
+    width: 20vh;
+    height: 20vh;
+}
+
+#icon{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30vh;
+    height: 30vh;
+    box-shadow: 0 0 1vh 0.6vh #fff;
+}
+
+.card{
+    text-align: center;
+}
+
+.card h2{
+    color: #fff;
+    font-size: 4vh;
+    margin: 0.5vh;
+}
+
+.timer_section{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+}
+
+.timer{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time_card{
+    background-color: #f1d3ae;
+    height: auto;
+    padding: 1vh;
+    border-radius: 1vh;
+    text-align: center;
+    box-shadow: 0 0 1vh 0.4vh #f1d3ae;
+}
+
+.time_card h2{
+    color: #fff;
+    margin: 0 0 1vh 0;
+    padding: 0.2vh 1vh;
+    font-size: 3vh;
+}
+
+.time_card span{
+    background-color: #ebc89e;
+    box-shadow: 0 0 1vh 0.1vh #ebc89e;
+    padding: 0.4vh 2.6vh;
+    border-radius: 1vh;
+    width: 100%;
+    color: #fff;
+    margin: 0;
+    font-size: 3vh;
+}
