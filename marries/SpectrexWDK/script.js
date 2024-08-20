@@ -13,7 +13,7 @@ function calculateTimePassed(startDate) {
 }
 
 function updateTimer() {
-    const startDate = new Date('2024-07-30T16:55:00'); // Замените на вашу начальную дату
+    const startDate = new Date('2024-07-30T16:55:27'); // Замените на вашу начальную дату
     const timePassed = calculateTimePassed(startDate);
 
     document.getElementById('years').textContent = Math.floor(timePassed.years);   
